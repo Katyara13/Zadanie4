@@ -1,0 +1,92 @@
+@font-face {
+    font-family: airport;
+    src: url(../font/Airport.ttf);
+}
+@font-face {
+    font-family: some;
+    src: url(../font/OKScU8ig.ttf);
+}
+
+body{
+    margin:0;
+    padding:0;
+    background: linear-gradient(to right,#87CEFA,#4169E1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+}
+
+.header-text{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    transform: rotate(-5deg);
+    text-shadow: 1px 1px 1px #00BFFF, 2px 2px 3px #0000FF;
+    font-family: airport;
+}
+
+.container{
+    display: flex;
+    flex-grow: 1;
+}
+
+nav{
+    margin: 0 30px;
+    position: relative;
+    z-index: 1000;
+
+}
+
+nav>ul{
+    list-style: none;
+    padding: 0;
+    width: 200px;
+    margin: 0;
+}
+
+nav>ul li{
+    display: block;
+    font-family: some;
+    border: 2px solid #0000FF;
+    background: radial-gradient(#87CEFA, #AFEEEE);
+    border-radius: 10px;
+    height: 50px;
+    font-size:  1.2rem;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1px;
+}
+
+nav>li div{
+    width: 90%;
+    text-align: center;
+}
+
+nav>ul li div:hover{
+    cursor: pointer;
+    color: #4682B4;
+}
+
+.content{
+    box-shadow: 1px 2px 3px black;
+    border: 2px solid #0000FF;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 5px 5px 5px 20px;
+}
+
+footer{
+    height: 40px;
+}
